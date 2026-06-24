@@ -1,0 +1,56 @@
+{
+  "features": [
+    "density_kg_m3",
+    "diameter_mm",
+    "youngs_modulus_GPa",
+    "static_TS_MPa",
+    "log1p_loading_rate",
+    "is_Direct"
+  ],
+  "feature_display_names": {
+    "density_kg_m3": "Rock Density (kg/m\u00b3)",
+    "diameter_mm": "Specimen Diameter (mm)",
+    "youngs_modulus_GPa": "Young's Modulus (GPa)",
+    "static_TS_MPa": "Static Tensile Strength (MPa)",
+    "log1p_loading_rate": "Loading Rate (GPa/s)",
+    "is_Direct": "Test Method"
+  },
+  "feature_ranges": {
+    "density_kg_m3": {
+      "min": 2150,
+      "max": 3097,
+      "unit": "kg/m\u00b3"
+    },
+    "diameter_mm": {
+      "min": 20,
+      "max": 85,
+      "unit": "mm"
+    },
+    "youngs_modulus_GPa": {
+      "min": 6.2,
+      "max": 92,
+      "unit": "GPa"
+    },
+    "static_TS_MPa": {
+      "min": 0.39,
+      "max": 24.5,
+      "unit": "MPa"
+    },
+    "loading_rate_GPa_s": {
+      "min": 0,
+      "max": 1866.4,
+      "unit": "GPa/s"
+    },
+    "is_Direct": {
+      "options": [
+        "Indirect (0)",
+        "Direct (1)"
+      ]
+    }
+  },
+  "model_performance": {
+    "RMSE_MPa": 4.921,
+    "R2": 0.9848,
+    "MAPE_pct": 11.63
+  }
+}

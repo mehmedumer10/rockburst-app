@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" sizes="any" /><!-- fallback -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a1628" />
+    <meta
+      name="description"
+      content="Geological exploration and analysis platform powered by advanced data visualization"
+    />
+    <meta name="keywords" content="geology, exploration, mining, data analysis, visualization" />
+    <meta name="author" content="GeoExplore Platform" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="GeoExplore - Geological Analysis Platform" />
+    <meta
+      property="og:description"
+      content="Advanced geological exploration and data analysis platform"
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GeoExplore Platform" />
+    <meta name="twitter:description" content="Advanced geological exploration platform" />
+
+    <!-- Preconnect for Google Fonts (already in CSS but speeds up initial load) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Apple touch icon -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>GeoExplore - Geological Analysis Platform</title>
+
+    <!-- Inline critical CSS to prevent flash of unstyled content -->
+    <style>
+      /* Prevent FOUC */
+      html,
+      body {
+        background-color: #030712;
+        color: #f3f4f6;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Loading spinner shown before React mounts */
+      #root-loader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #030712;
+        font-family: 'Inter', system-ui, sans-serif;
+        gap: 16px;
+      }
+
+      #root-loader .loader-ring {
+        width: 52px;
+        height: 52px;
+        border: 4px solid rgba(255, 255, 255, 0.08);
+        border-top-color: #2563eb;
+        border-radius: 50%;
+        animation: spin 0.9s linear infinite;
+      }
+
+      #root-loader .loader-text {
+        color: #6b7280;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Shown if JS is disabled -->
+    <noscript>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          background: #030712;
+          color: #f3f4f6;
+          font-family: system-ui, sans-serif;
+          text-align: center;
+          padding: 24px;
+        "
+      >
+        <div>
+          <h1 style="font-size: 24px; margin-bottom: 12px;">JavaScript Required</h1>
+          <p style="color: #9ca3af; max-width: 400px;">
+            GeoExplore requires JavaScript to run. Please enable JavaScript in your
+            browser settings and reload the page.
+          </p>
+        </div>
+      </div>
+    </noscript>
+
+    <!-- Pre-mount loading indicator -->
+    <div id="root-loader">
+      <div class="loader-ring"></div>
+      <span class="loader-text">Loading GeoExplore…</span>
+    </div>
+
+    <!-- React mounts here -->
+    <div id="root"></div>
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+    -->
+  </body>
+</html>

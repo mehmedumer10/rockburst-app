@@ -1,0 +1,27 @@
+<!-- public/favicon.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background -->
+  <rect width="64" height="64" rx="12" fill="#0a1628"/>
+
+  <!-- Blue ring -->
+  <circle
+    cx="32" cy="32" r="24"
+    fill="none"
+    stroke="#2563eb"
+    stroke-width="3.5"
+  />
+
+  <!-- Amber "G" lettermark -->
+  <text
+    x="32" y="38"
+    font-family="Arial Black, Arial, sans-serif"
+    font-size="26"
+    font-weight="900"
+    fill="#f59e0b"
+    text-anchor="middle"
+  >G</text>
+
+  <!-- Small geological layer lines at bottom -->
+  <line x1="18" y1="50" x2="46" y2="50" stroke="#1e3a7a" stroke-width="2"/>
+  <line x1="22" y1="54" x2="42" y2="54" stroke="#162d5e" stroke-width="2"/>
+</svg>
