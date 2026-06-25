@@ -1,0 +1,28 @@
+{
+  "short_name": "GeoExplore",
+  "name": "GeoExplore — Geological Analysis Platform",
+  "description": "Advanced geological exploration and data analysis platform",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0a1628",
+  "background_color": "#030712",
+  "orientation": "portrait-primary",
+  "categories": ["productivity", "utilities"]
+}
