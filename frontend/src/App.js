@@ -1,9 +1,9 @@
-// src/App.js
+﻿// src/App.js
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
 
-// ─── Lazy-loaded pages ────────────────────────────────────────────────────────
+// â”€â”€â”€ Lazy-loaded pages â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const LandingPage  = lazy(() => import('./pages/LandingPage'));
 const LoginPage    = lazy(() => import('./pages/LoginPage'));
 const SignupPage   = lazy(() => import('./pages/SignupPage'));
@@ -15,7 +15,7 @@ const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 // 1. ADD THIS HERE:
 const AboutPage    = lazy(() => import('./pages/AboutPage')); 
 
-// ─── Page loader fallback ─────────────────────────────────────────────────────
+// â”€â”€â”€ Page loader fallback â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const PageLoader = () => (
   <div style={{
     display:        'flex',
@@ -38,12 +38,12 @@ const PageLoader = () => (
       @keyframes spin { to { transform: rotate(360deg); } }
     `}</style>
     <span style={{ color: '#6b7280', fontSize: '14px' }}>
-      Loading…
+      Loadingâ€¦
     </span>
   </div>
 );
 
-// ─── Route guards ─────────────────────────────────────────────────────────────
+// â”€â”€â”€ Route guards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const PublicRoute = ({ children }) => {
   const { user } = useAuth();
@@ -55,7 +55,7 @@ const ProtectedRoute = ({ children }) => {
   return user ? children : <Navigate to="/login" replace />;
 };
 
-// ─── Routes ───────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Routes â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function AppRoutes() {
   return (
     <Suspense fallback={<PageLoader />}>
@@ -130,10 +130,10 @@ function AppRoutes() {
   );
 }
 
-// ─── App ──────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ App â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/rockburst-app">
       <AuthProvider>
         <AppRoutes />
       </AuthProvider>
