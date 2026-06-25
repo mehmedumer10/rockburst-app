@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rockburst-app/static/css/main.fcf139bc.css",
-    "main.js": "/rockburst-app/static/js/main.d52e3e14.js",
+    "main.js": "/rockburst-app/static/js/main.f971d0b0.js",
     "static/css/380.ea334f05.chunk.css": "/rockburst-app/static/css/380.ea334f05.chunk.css",
     "static/js/380.36d1317b.chunk.js": "/rockburst-app/static/js/380.36d1317b.chunk.js",
     "static/css/93.4751aa7c.chunk.css": "/rockburst-app/static/css/93.4751aa7c.chunk.css",
@@ -28,7 +28,7 @@
     "static/js/978.60e24d3c.chunk.js": "/rockburst-app/static/js/978.60e24d3c.chunk.js",
     "index.html": "/rockburst-app/index.html",
     "main.fcf139bc.css.map": "/rockburst-app/static/css/main.fcf139bc.css.map",
-    "main.d52e3e14.js.map": "/rockburst-app/static/js/main.d52e3e14.js.map",
+    "main.f971d0b0.js.map": "/rockburst-app/static/js/main.f971d0b0.js.map",
     "380.ea334f05.chunk.css.map": "/rockburst-app/static/css/380.ea334f05.chunk.css.map",
     "380.36d1317b.chunk.js.map": "/rockburst-app/static/js/380.36d1317b.chunk.js.map",
     "93.4751aa7c.chunk.css.map": "/rockburst-app/static/css/93.4751aa7c.chunk.css.map",
@@ -56,6 +56,6 @@
   },
   "entrypoints": [
     "static/css/main.fcf139bc.css",
-    "static/js/main.d52e3e14.js"
+    "static/js/main.f971d0b0.js"
   ]
 }
