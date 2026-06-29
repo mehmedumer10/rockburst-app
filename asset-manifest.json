@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/rockburst-app/static/css/main.fcf139bc.css",
-    "main.js": "/rockburst-app/static/js/main.357980e3.js",
-    "static/css/380.ea334f05.chunk.css": "/rockburst-app/static/css/380.ea334f05.chunk.css",
+    "main.css": "/rockburst-app/static/css/main.4b36d9dd.css",
+    "main.js": "/rockburst-app/static/js/main.bfcb94be.js",
+    "static/css/380.6048a927.chunk.css": "/rockburst-app/static/css/380.6048a927.chunk.css",
     "static/js/380.36d1317b.chunk.js": "/rockburst-app/static/js/380.36d1317b.chunk.js",
     "static/css/93.4751aa7c.chunk.css": "/rockburst-app/static/css/93.4751aa7c.chunk.css",
     "static/js/93.44c274f7.chunk.js": "/rockburst-app/static/js/93.44c274f7.chunk.js",
@@ -27,9 +27,9 @@
     "static/js/917.236d4169.chunk.js": "/rockburst-app/static/js/917.236d4169.chunk.js",
     "static/js/978.60e24d3c.chunk.js": "/rockburst-app/static/js/978.60e24d3c.chunk.js",
     "index.html": "/rockburst-app/index.html",
-    "main.fcf139bc.css.map": "/rockburst-app/static/css/main.fcf139bc.css.map",
-    "main.357980e3.js.map": "/rockburst-app/static/js/main.357980e3.js.map",
-    "380.ea334f05.chunk.css.map": "/rockburst-app/static/css/380.ea334f05.chunk.css.map",
+    "main.4b36d9dd.css.map": "/rockburst-app/static/css/main.4b36d9dd.css.map",
+    "main.bfcb94be.js.map": "/rockburst-app/static/js/main.bfcb94be.js.map",
+    "380.6048a927.chunk.css.map": "/rockburst-app/static/css/380.6048a927.chunk.css.map",
     "380.36d1317b.chunk.js.map": "/rockburst-app/static/js/380.36d1317b.chunk.js.map",
     "93.4751aa7c.chunk.css.map": "/rockburst-app/static/css/93.4751aa7c.chunk.css.map",
     "93.44c274f7.chunk.js.map": "/rockburst-app/static/js/93.44c274f7.chunk.js.map",
@@ -55,7 +55,7 @@
     "978.60e24d3c.chunk.js.map": "/rockburst-app/static/js/978.60e24d3c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcf139bc.css",
-    "static/js/main.357980e3.js"
+    "static/css/main.4b36d9dd.css",
+    "static/js/main.bfcb94be.js"
   ]
 }
